@@ -42,9 +42,6 @@ getTotalNum =()=>{
 getTotalNum();
 
 
-
-
-
 // CLASS
 // Create an class with 1 property and 1 function 
 // Create an object from the class 
@@ -70,16 +67,20 @@ console.log('my favorite game is '+ myGame.name + ' and I have been playing for 
 console.log('Spread syntax')
 
 
-// What will this return {data, [e.target.name: e.target.value]}, if data = {“name”: {‘kk}} and e.target.name = name and e.target.value = kk ? 
-{`Uncaught SyntaxError
-不太理解题目需要返回的是什么，
-符号没有闭合，另外申明name的时候没有引号
-`}
+// What will this return {...data, [e.target.name]: e.target.value}, if data = {"name": 'ss'} and e.target.name = ‘name’ and e.target.value = ‘kk’ ? 
+{
+    name:'ss'
+    name:'kk'
+}
 
 
-// What will this return {data, [e.target.name: e.target.value]}, if data = {“name”: {‘kk}} and e.target.name = hello and e.target.value = k1? 
-
-{`Uncaught SyntaxError同上`}
+// What will this return {data, [e.target.name]: e.target.value}, if data = {"name": 'ss'} and e = {target: {name: 'dd', value: 1}} ? 
+{
+    data:{
+        name:'ss'
+    }
+    dd:1
+}
 
 
 // KEYWORD
