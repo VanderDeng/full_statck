@@ -6,7 +6,7 @@
  *   - implement Bottles.java and make sure all tests pass without changing this test file
  */
 
-package com.jiangren.bootcamp.java;
+package test;
 
 import org.junit.jupiter.api.Test;
 

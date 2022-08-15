@@ -1,2 +1,6 @@
-package methods;public class Bottles {
+package methods;
+
+public class Bottles {
+
+
 }
