@@ -1,0 +1,108 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+u p {
+	color: rgb(129, 129, 129);
+	margin: 10px;
+	word-spacing: 1px;
+	line-height: 25px;
+}
+
+/* Card A */
+#card-a {
+	position: relative;
+	width: 360px;
+	margin: auto;
+}
+
+#card-a img {
+	width: 100%;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 100;
+	margin: 10px;
+}
+
+h2 {
+	position: absolute;
+	font-size: 12px;
+	font-weight: 100;
+	top: 20px;
+	right: 20px;
+	margin: 5px;
+	padding: 5px 15px;
+	background-color: rgb(255, 74, 74);
+	color: white;
+	border-radius: 5px;
+}
+
+.mask {
+	width: 100%;
+	-webkit-mask-image: linear-gradient(black, transparent);
+	mask-image: linear-gradient(black, transparent);
+}
+
+#card-a .button {
+	position: absolute;
+	background: linear-gradient(to right, #0073f7, #4d9ffc);
+	font-size: 16px;
+	color: white;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 0;
+	border-radius: 30px;
+	padding: 10px 20px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+#card-a .button:hover {
+	background: linear-gradient(to right, #0053b3, #0074f8);
+}
+
+/* Card B */
+
+#card-b {
+	position: relative;
+	width: 700px;
+	height: 400px;
+	background-image: url("../images/bg-2.png");
+	background-size: 700px;
+	margin: auto;
+	border-radius: 20px;
+}
+
+#card-b .content {
+	background-color: white;
+	height: 100%;
+	width: 60%;
+	right: 0;
+	position: absolute;
+	padding: 20px;
+	margin-left: 10px;
+}
+
+h3 {
+	color: rgb(96, 255, 157);
+	font-weight: 100;
+	position: relative;
+	margin-left: 10px;
+}
+
+#card-b h1 {
+	position: relative;
+}
+
+#view-trip {
+	margin-left: 10px;
+	margin-top: 30px;
+}
+
+#view-trip a {
+	text-decoration: none;
+	text-align: center;
+	color: #4d9ffc;
+}
