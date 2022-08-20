@@ -6,6 +6,7 @@ var calculator = {
 	prevOpt: "", //标记前一步操作
 };
 
+// 10次历史记录
 var historyList = [];
 var historyPoint = 0;
 
@@ -37,45 +38,35 @@ function handleDigit(value) {
 					this.historyList.shift();
 					this.historyList.push(this.calculator.displayValue);
 				}
-				console.log(this.historyList);
-
 				break;
 			}
 		case "+":
 			this.equal();
-			this.calculator.tempValue = this.calculator.displayValue;
-			this.calculator.flag = "+";
-			this.calculator.prevOpt = "+";
+			this.addMark("+");
 			break;
 		case "-":
 			this.equal();
-			this.calculator.tempValue = this.calculator.displayValue;
-			this.calculator.flag = "-";
-			this.calculator.prevOpt = "-";
+			this.addMark("-");
 			break;
 		case "*":
 			this.equal();
-			this.calculator.tempValue = this.calculator.displayValue;
-			this.calculator.flag = "*";
-			this.calculator.prevOpt = "*";
+			this.addMark("*");
 			break;
 		case "/":
 			this.equal();
-			this.calculator.tempValue = this.calculator.displayValue;
-			this.calculator.flag = "/";
-			this.calculator.prevOpt = "/";
+			this.addMark("/");
 			break;
 		case "clock":
 			if (this.calculator.prevOpt == "clock") {
 				if (this.historyPoint >= 1) {
-					this.historyPoint = this.historyPoint - 1;
+					this.historyPoint -= this.historyPoint;
 					this.calculator.displayValue =
 						this.historyList[this.historyPoint];
 				} else {
 					this.calculator.displayValue = "0";
 				}
 			} else {
-				this.historyPoint = this.historyList.length - 1;
+				this.historyPoint -= this.historyList.length;
 				this.calculator.displayValue =
 					this.historyList[this.historyPoint];
 				this.calculator.prevOpt = "clock";
@@ -98,6 +89,19 @@ function clear() {
 	this.updateDisplay();
 }
 
+function clearTemp() {
+	this.calculator.tempValue = "0";
+	this.updateDisplay();
+	this.calculator.flag = "";
+}
+
+// addMark
+function addMark(mark) {
+	this.calculator.tempValue = this.calculator.displayValue;
+	this.calculator.flag = mark;
+	this.calculator.prevOpt = mark;
+}
+
 // 等于运算
 function equal() {
 	switch (this.calculator.flag) {
@@ -105,33 +109,25 @@ function equal() {
 			this.calculator.displayValue =
 				parseFloat(this.calculator.tempValue) +
 				parseFloat(this.calculator.displayValue);
-			this.calculator.tempValue = "0";
-			this.updateDisplay();
-			this.calculator.flag = "";
+			this.clearTemp();
 			break;
 		case "-":
 			this.calculator.displayValue =
 				parseFloat(this.calculator.tempValue) -
 				parseFloat(this.calculator.displayValue);
-			this.calculator.tempValue = "0";
-			this.updateDisplay();
-			this.calculator.flag = "";
+			this.clearTemp();
 			break;
 		case "*":
 			this.calculator.displayValue =
 				parseFloat(this.calculator.tempValue) *
 				parseFloat(this.calculator.displayValue);
-			this.calculator.tempValue = "0";
-			this.updateDisplay();
-			this.calculator.flag = "";
+			this.clearTemp();
 			break;
 		case "/":
 			this.calculator.displayValue =
 				parseFloat(this.calculator.tempValue) /
 				parseFloat(this.calculator.displayValue);
-			this.calculator.tempValue = "0";
-			this.updateDisplay();
-			this.calculator.flag = "";
+			this.clearTemp();
 			break;
 	}
 }
