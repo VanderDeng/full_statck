@@ -6,7 +6,6 @@ var calculator = {
 	prevOpt: "", //标记前一步操作
 };
 
-// 10次历史记录
 var historyList = [];
 var historyPoint = 0;
 
@@ -59,14 +58,14 @@ function handleDigit(value) {
 		case "clock":
 			if (this.calculator.prevOpt == "clock") {
 				if (this.historyPoint >= 1) {
-					this.historyPoint -= this.historyPoint;
+					this.historyPoint = this.historyPoint - 1;
 					this.calculator.displayValue =
 						this.historyList[this.historyPoint];
 				} else {
 					this.calculator.displayValue = "0";
 				}
 			} else {
-				this.historyPoint -= this.historyList.length;
+				this.historyPoint = this.historyList.length - 1;
 				this.calculator.displayValue =
 					this.historyList[this.historyPoint];
 				this.calculator.prevOpt = "clock";
