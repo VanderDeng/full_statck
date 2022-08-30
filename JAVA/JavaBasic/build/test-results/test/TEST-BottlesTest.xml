@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BottlesTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-08-28T02:05:26" hostname="VANDERDENG-MB0" time="0.038">
+  <properties/>
+  <testcase name="testCoupleVerses()" classname="BottlesTest" time="0.029"/>
+  <testcase name="testFirstVerse()" classname="BottlesTest" time="0.001"/>
+  <testcase name="testTheWholeSong()" classname="BottlesTest" time="0.003"/>
+  <testcase name="testAnotherVerse()" classname="BottlesTest" time="0.001"/>
+  <testcase name="testAFewVerses()" classname="BottlesTest" time="0.001"/>
+  <testcase name="testVerse0()" classname="BottlesTest" time="0.001"/>
+  <testcase name="testVerse1()" classname="BottlesTest" time="0.001"/>
+  <testcase name="testVerse2()" classname="BottlesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
