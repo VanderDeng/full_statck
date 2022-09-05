@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81ddd822-0627-4485-b123-26f47e55aad9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bottles/Bottles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bottles/FunctionalInterfaces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bottles/JavaBasic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bottles/JavaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JavaBasicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JavaTest/BottleRun/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaTest/JavaTest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaTest/src/methods/Bottles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaTest/src/test/BottlesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javapretest/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javapretest/.idea/javapretest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javapretest/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javapretest/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javapretest/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../js/vander_calculator.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../js/vander_calculator.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +131,8 @@
       <workItem from="1661645169424" duration="3646000" />
       <workItem from="1661689485065" duration="73000" />
       <workItem from="1661746771517" duration="1000" />
+      <workItem from="1662096017064" duration="58000" />
+      <workItem from="1662099657991" duration="769000" />
     </task>
     <servers />
   </component>
